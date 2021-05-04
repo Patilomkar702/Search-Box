@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar Search Engin</title>
+    <link rel="stylesheet" href="auto.css">
+    <!-- Required inorder to work Rapid_API -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--  Font Awesome -->
+    <script src="https://use.fontawesome.com/8c4440e5e5.js"></script>
+  </head>
+<body>
+    <div class="container-fluid mt-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="mb-3">
+            <h2 style="font-family: cursive; color: rgb(11, 11, 158);">Search Engine</h2 style="font-family: cursive; color: blue;">
+        </div>
+        <div>
+            <div class="form-inline my-2 my-lg-0">
+                <input class="form-control" type="search" placeholder="Search" id="inputBox">
+                <button class="btn btn-outline-primary" id="search" style="width: 65px;"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="card mt-3" id="card" hidden style="width: 18rem;">
+            <ul class="list-group list-group-flush" id="suggestionBox">
+                <li class="list-group-item" id="suggestItem" hidden style="cursor: pointer;" onclick="selected(this)">Item 1</li>
+            </ul>
+          </div>
+    </div>
+    <script src="auto.js"></script>
+</body>
+</html>
